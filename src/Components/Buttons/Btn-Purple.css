@@ -1,0 +1,12 @@
+.BtnHeader{
+    @apply text-white font-semibold text-base bg-[#A259FF] px-10 py-4 rounded-[20px] flex items-center ;
+}
+.BtnHero{
+    @apply text-white font-semibold text-base bg-[#A259FF] px-10 py-4 rounded-[20px]
+    flex items-center w-full justify-center
+    lg:w-[15em];
+}
+
+.BtnHeaderIcon{
+    @apply text-white mr-2;
+}

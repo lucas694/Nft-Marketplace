@@ -1,0 +1,29 @@
+.CollectionCardContainer{
+    @apply flex flex-col w-[20em] mt-14 pb-4
+}
+.CollectionCardSecondary{
+    @apply flex flex-row justify-between mt-4
+}
+.SecondaryCardImg{
+    @apply w-24 h-24
+}
+.SecondaryMoreCards{
+    @apply w-24 bg-blue-200 rounded-[20px] text-white cursor-pointer bg-[#A259FF]
+    flex flex-col justify-center items-center text-lg font-bold
+}
+.CollectionCardInf{
+    @apply flex flex-col mt-4
+}
+
+.CollectionCardTittle{
+    @apply text-lg font-bold text-white
+}
+.CollectionCardCreator{
+    @apply flex flex-row items-center mt-2
+}
+.CardCreatorName{
+    @apply text-sm font-normal text-gray-300
+}
+.CollectionCardAvatar{
+    @apply w-6 h-6 rounded-full mr-2
+}

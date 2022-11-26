@@ -1,0 +1,17 @@
+.TrendingCollectionContainer{
+    @apply flex flex-col w-[80%] mt-20 flex-wrap
+    lg:mt-40
+}
+.TrendingCollectionTitle{
+    @apply text-5xl font-bold text-white w-full text-center
+    lg:text-4xl lg:text-start
+}
+.TrendingCollectionDesc{
+    @apply font-normal text-gray-300 mt-4 text-xl w-full text-center
+    lg:text-lg lg:w-[80%] lg:text-start
+
+}
+.TrendingCardContent{
+    @apply flex flex-row justify-around flex-wrap
+
+}

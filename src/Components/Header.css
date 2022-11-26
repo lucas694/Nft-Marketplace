@@ -1,0 +1,40 @@
+.HeaderContainer{
+    @apply flex flex-row justify-between items-center px-6 py-4
+    md:px-14
+}
+.HeaderLeft{
+    @apply flex flex-row items-center;
+}
+.HeaderIcon{
+    @apply text-2xl text-[#A259FF];
+}
+.HeaderTittle{
+    @apply text-2xl text-white font-semibold ml-2;
+}
+
+.HeaderRight{
+    @apply flex flex-row items-center;
+}
+.UlHeader{
+    @apply hidden
+    lg:flex lg:flex-row lg:items-center lg:justify-between;
+}
+.LiHeader{
+    @apply text-white font-semibold text-lg ml-8;
+}
+.LiMobileHeader{
+    @apply text-white font-semibold text-lg ml-8 py-2
+}
+.NavMobile{
+    @apply flex flex-col items-center justify-center absolute
+    top-16 left-0 w-full px-14 backdrop-blur-sm
+    lg:hidden
+}
+
+.BtnMobileIcon{
+    @apply text-white text-4xl cursor-pointer
+    lg:hidden
+}
+.NavMobileHidden{
+    @apply hidden
+}

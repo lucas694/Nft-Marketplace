@@ -1,0 +1,30 @@
+.CreatorsCardsContainer{
+    @apply flex flex-row bg-[#3B3B3B] mt-14 rounded-[15px] pb-4 pt-4 pl-4 pr-10
+    md:flex md:flex-col  md:w-[12em] md:mt-14 md:items-center md:pb-4 md:pt-4 md:z-0 md:pl-0 md:pr-0
+}
+.CreatorCardId{
+    @apply absolute rounded-full bg-[#2B2B2B] w-6 h-6 text-gray-500 text-sm font-semibold mr-[10em] mb-[4em]
+    md:absolute md:w-6 md:h-6 md:mr-[10em]
+}
+.CreatorCardAvatar{
+    @apply w-20 h-20 rounded-full
+    md:w-24 md:h-24
+}
+.CreatorCardInfs{
+    @apply flex flex-col items-start ml-4
+    md:flex md:flex-col md:items-center md:ml-0
+}
+.CreatorCardTittle{
+    @apply text-white font-semibold text-lg mt-4
+    md:text-white md:font-semibold md:text-lg md:mt-4
+}
+.CreatorCardDescSec{
+    @apply flex flex-row items-center justify-center mt-2
+    md:flex md:flex-row md:items-center md:justify-center md:mt-2
+}
+.CreatorCardDesc{
+    @apply text-gray-300 font-normal text-sm flex
+}
+.CreatorCardDescValue{
+    @apply text-white font-normal text-sm ml-2
+}

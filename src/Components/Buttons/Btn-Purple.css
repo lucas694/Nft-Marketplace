@@ -10,3 +10,22 @@
 .BtnHeaderIcon{
     @apply text-white mr-2;
 }
+
+.BtnCreators{
+    @apply text-white font-semibold text-base border-2 border-[#A259FF] w-[18em] py-4 rounded-[20px]
+    flex items-center justify-center
+    ;
+}
+
+.BtnCreatorsIcon{
+    @apply text-[#A259FF] mr-2 ;
+}
+
+.BtnNftHighlight{
+    @apply text-black font-semibold text-base bg-white w-full py-4 rounded-[20px] mt-10
+    flex items-center  justify-center
+    lg:w-[15em];
+}
+.BtnNftHighlightIcon{
+    @apply text-[#A259FF] mr-2 w-5 h-5;
+}

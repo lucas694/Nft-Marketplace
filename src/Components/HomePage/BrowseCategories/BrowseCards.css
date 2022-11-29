@@ -1,0 +1,27 @@
+.BrowseCardContainer{
+    @apply flex flex-col mt-10 w-[10em] h-[15em] bg-[#3B3B3B] rounded-[20px] cursor-pointer
+    md:w-[15em] md:h-[20em]
+    2xl:w-[19em] 2xl:h-[23.5em]
+}
+.BrowseCardImgs{
+    @apply w-full h-[20em] rounded-t-[20px] flex flex-col justify-center items-center overflow-hidden
+    md:h-[25em]
+    2xl:w-full 2xl:h-[20em]
+}
+.bgImg{
+    @apply w-full h-full object-cover rounded-t-[20px] blur-sm
+}
+
+.paintImg{
+    @apply w-20 h-20 absolute
+    md:w-24 md:h-24
+}
+.BrowseCardDesc{
+    @apply flex flex-col pt-2 px-4 pb-3
+    md:pt-4 md:px-6 md:pb-4
+    2xl:pt-2 2xl:px-6 2xl:pb-2 2xl:mt-1
+}
+.BrowseCardsTittle{
+    @apply text-lg font-bold text-white mt-0
+    2xl:text-xl
+}

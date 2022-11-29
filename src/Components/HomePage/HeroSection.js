@@ -2,6 +2,8 @@ import "./HeroSection.css"
 import BtnPurple from "../Buttons/Btn-Purple";
 import HeroCard from "../../Assets/HeroCard.png";
 import creator from "../../Assets/AssetCres.png";
+import { FaRocket } from "react-icons/fa";
+
 
 const HeroSection = () => {
   return(
@@ -10,7 +12,7 @@ const HeroSection = () => {
         <h1 className={"HeroTittle"}>Discover Digital Art & Collect NFTs</h1>
         <p className={"HeroDescription"}>NFT Marketplace UI Created With Anima For Figma. Collect, Buy And Sell Art From More Than 20k NFT Artists.</p>
         <div className={"HeroInfContent"}>
-          <BtnPurple className={"BtnHero"} BtnText={"Connect a wallet"}/>
+          <BtnPurple className={"BtnHero"} BtnText={"Connect a wallet"} BtnIcon={<FaRocket className={"BtnHeaderIcon"}/>}/>
 
           <div className={"HeroInfSection"}>
             <div className={"HeroInf"}>

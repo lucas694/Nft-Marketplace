@@ -1,0 +1,10 @@
+.BrowseCategoriesContainer{
+    @apply flex flex-col justify-between mt-28 w-[80%] flex-wrap pb-4
+}
+.BrowseCategoriesCards{
+    @apply flex flex-row justify-between w-full flex-wrap
+}
+.BrowseCategoriesTitle{
+    @apply text-5xl font-bold text-white w-full text-center
+    lg:text-4xl lg:text-start
+}

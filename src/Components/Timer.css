@@ -1,0 +1,10 @@
+.TimerSec{
+    @apply flex flex-row items-center justify-center px-6 py-2 rounded-[20px] backdrop-blur
+    md:px-4 md:py-2;
+}
+.TimerValues{
+    @apply text-white font-semibold text-7xl text-center
+}
+.TimerDesc{
+    @apply text-white font-normal text-base
+}

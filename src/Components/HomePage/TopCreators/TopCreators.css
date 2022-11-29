@@ -1,0 +1,23 @@
+.TopCreatorsContainer{
+    @apply flex flex-col items-center justify-center mt-20 w-[80%] flex-wrap
+}
+.TopCreatorsTextSec{
+    @apply flex flex-col text-start w-full
+}
+.TopCreatorsTittle{
+    @apply text-5xl font-bold text-white w-full text-center
+    lg:text-4xl lg:text-start
+}
+.TopCreatorsDescSec{
+    @apply flex flex-col justify-between w-full mt-4 items-center space-y-6
+    lg:flex-row lg:space-y-0
+
+}
+.TopCreatorsDescription{
+    @apply font-normal text-gray-300 mt-4 text-xl w-full text-center
+    lg:text-lg lg:text-start
+}
+
+.TopCreatorsCardsSec{
+    @apply flex flex-row justify-around w-[90%] mt-4 flex-wrap pb-4
+}

@@ -10,7 +10,7 @@
 .BtnHeaderIcon{
     @apply text-white mr-2;
 }
-
+{/*Botoes Creators*/}
 .BtnCreators{
     @apply text-white font-semibold text-base border-2 border-[#A259FF] w-[18em] py-4 rounded-[20px]
     flex items-center justify-center
@@ -21,6 +21,7 @@
     @apply text-[#A259FF] mr-2 ;
 }
 
+{/*Botoes Highlight*/}
 .BtnNftHighlight{
     @apply text-black font-semibold text-base bg-white w-full py-4 rounded-[20px] mt-10
     flex items-center  justify-center
@@ -28,4 +29,19 @@
 }
 .BtnNftHighlightIcon{
     @apply text-[#A259FF] mr-2 w-5 h-5;
+}
+
+{/*Botoes Subscribe*/}
+.BtnSubscribeWhite {
+    @apply text-black font-semibold text-base bg-white w-full py-4 rounded-[20px] mt-4
+    flex items-center  justify-center
+    lg:w-[20em]
+}
+.BtnSubscribePurple{
+    @apply text-white font-semibold text-base bg-[#A259FF] w-full py-4 rounded-[20px] mt-4
+    flex items-center  justify-center
+    lg:w-[20em]
+}
+.BtnSubscribePurpleIcon{
+    @apply text-white mr-2 ;
 }

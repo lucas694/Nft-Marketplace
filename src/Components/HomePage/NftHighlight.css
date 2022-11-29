@@ -1,6 +1,6 @@
 .HightlightContainer{
-    @apply flex flex-col items-center justify-start mt-20 w-full h-[30em] pb-6
-    lg:flex-row lg:justify-around lg:mt-52 lg:h-[35em]
+    @apply flex flex-col items-center justify-start mt-20 w-full h-[30em] pb-10
+    lg:flex-row lg:justify-around lg:mt-52 lg:h-[35em] lg:pb-4
 }
 .HightlightContainer{
     background-image: url("../../Assets/mush.jpg");

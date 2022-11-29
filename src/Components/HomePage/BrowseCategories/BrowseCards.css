@@ -1,5 +1,5 @@
 .BrowseCardContainer{
-    @apply flex flex-col mt-10 w-[10em] h-[15em] bg-[#3B3B3B] rounded-[20px] cursor-pointer
+    @apply flex flex-col mt-10 w-[9.5em] h-[13em] bg-[#3B3B3B] rounded-[20px] cursor-pointer
     md:w-[15em] md:h-[20em]
     2xl:w-[19em] 2xl:h-[23.5em]
 }

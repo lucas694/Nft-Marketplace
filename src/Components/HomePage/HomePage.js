@@ -4,6 +4,7 @@ import TrendingCollection from "./TrendingCollection/TrendingCollection";
 import TopCreators from "./TopCreators/TopCreators";
 import BrowseCategories from "./BrowseCategories/BrowseCategories";
 import NftHighlight from "./NftHighlight";
+import SubscribeSec from "./SubscribeSec";
 
 const HomePage = () => {
   return(
@@ -13,6 +14,7 @@ const HomePage = () => {
       <TopCreators/>
       <BrowseCategories/>
       <NftHighlight/>
+      <SubscribeSec/>
 
     </div>
   )

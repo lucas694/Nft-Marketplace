@@ -1,0 +1,21 @@
+.HowItsWorksCards{
+    @apply flex flex-row w-full bg-[#3B3B3B] rounded-[20px] items-center mt-4 py-3 px-2
+    md:flex-col md:w-[18em] md:items-center md:py-0 md:px-0
+}
+.HowItsWorksImg{
+    @apply w-[7em] h-[7em] rounded-full object-cover
+    md:w-[80%] md:h-[80%]
+}
+.HowItsWorksCardsInf{
+    @apply flex flex-col px-6 pb-0
+    md:flex-col md:px-4 md:pb-4
+}
+.HowItsWorksCardsTittle{
+    @apply text-white font-bold text-lg
+    md:text-xl md:text-center
+
+}
+.HowItsWorksCardsDesc{
+    @apply text-gray-300 text-sm mt-2
+    md:text-center md:mt-4
+}

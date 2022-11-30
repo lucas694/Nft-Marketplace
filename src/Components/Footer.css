@@ -1,0 +1,34 @@
+.FooterContainer{
+    @apply w-[90%] flex flex-col justify-center pb-4 
+    md:px-10 md:pt-10 md:w-[80%] md:mt-14
+}
+.FooterContent{
+    @apply flex flex-col justify-center
+    md:flex-row md:justify-between;
+}
+.FooterSections{
+    @apply flex flex-col mt-14
+    md:mt-0
+}
+.FooterTittle{
+    @apply text-2xl text-white font-semibold pb-2
+    md:pb-4
+}
+.FooterLinks{
+    @apply text-gray-300 font-semibold text-sm mt-3
+}
+.FooterLeft{
+    @apply w-[70%]
+}
+.FooterIconSec{
+    @apply flex flex-row
+}
+.FooterIcons{
+    @apply flex flex-row mt-3 text-gray-400 font-semibold text-3xl cursor-pointer mr-3
+}
+.FooterHr{
+    @apply border-t-2 border-[#858584] w-full mt-6
+}
+.FooterCopyright{
+    @apply text-[#858584] font-semibold text-sm mt-3 text-center
+}

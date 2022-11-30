@@ -1,5 +1,5 @@
 .HeaderContainer{
-    @apply flex flex-row justify-between items-center px-6 py-4
+    @apply flex flex-row justify-between items-center px-6 py-4 w-full
     md:px-14
 }
 .HeaderLeft{

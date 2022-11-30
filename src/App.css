@@ -1,5 +1,5 @@
 .App {
-  @apply flex flex-col w-full ;
+  @apply flex flex-col w-full items-center;
 }
  body{
    @apply bg-[#2B2B2B]

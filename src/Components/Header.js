@@ -3,18 +3,25 @@ import { FaStore } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import {useState} from "react";
-
-
+import {Link} from "react-router-dom";
+import Modal from 'react-modal';
 import BtnPurple from "./Buttons/Btn-Purple";
+import SignUp from "./SignUp/SignUp";
 
 const Header = () =>{
   const [isOpen, setIsOpen] = useState(false);
-const toggle = () => {
-  setIsOpen(!isOpen)
-  console.log(isOpen);
-}
+  const toggle = () => {
+    setIsOpen(!isOpen)
+    console.log(isOpen);
+  };{/*Botão Mobile*/}
 
-
+  const [modalIsOpen ,setModalIsOpen] = useState(false);
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+  const closeModal =() => {
+    setModalIsOpen(false);
+  };
   return(
     <div className={"HeaderContainer"}>
       <div className={"HeaderLeft"}>
@@ -27,13 +34,18 @@ const toggle = () => {
           <FaBars className={"BtnMobileIcon"}/>
         </button>
         <ul className={"UlHeader"}>
-          <li className={"LiHeader"}>Marketplace</li>
+          <Link to="/">
+            <li className={"LiHeader"}>Home</li>
+          </Link>
+
           <li className={"LiHeader"}>Rankings</li>
           <li className={"LiHeader"}>Connect a wallet</li>
           <li className={"LiHeader"}>
-            <BtnPurple className={"BtnHeader"}
+              <BtnPurple className={"BtnHeader"}
                          BtnText={"Sign Up"}
-            BtnIcon={<FaRegUser className={"BtnHeaderIcon"}/>}/>
+                         BtnIcon={<FaRegUser className={"BtnHeaderIcon"}
+                         onClick={openModal}/>}
+              />
           </li>
         </ul>
 
@@ -42,8 +54,24 @@ const toggle = () => {
             <li className={"LiMobileHeader"}>Marketplace</li>
             <li className={"LiMobileHeader"}>Rankings</li>
             <li className={"LiMobileHeader"}>Connect a wallet</li>
+            <li className={"LiMobileHeader"}><BtnPurple className={"BtnHeader"}
+                       BtnText={"Sign Up"}
+                       BtnIcon={<FaRegUser className={"BtnHeaderIcon"}
+                                           onClick={openModal}/>}
+            /></li>
           </ul>
         </div>
+      </div>
+      <div className={modalIsOpen ? "ModalStyle" : "ModalHidden" }>
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          className={"ModalStyle"}
+          contentLabel="Example Modal"
+        >
+          <button className={"BtnModalLight"}onClick={closeModal}>Close Modal</button>
+            <SignUp/>
+        </Modal>
       </div>
     </div>
   )

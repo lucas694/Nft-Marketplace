@@ -45,7 +45,9 @@ const Footer = () => {
       <div>
         <hr className={"FooterHr"}/>
         <div>
-          <p className={"FooterCopyright"}>© 2021 NFT Marketplace. All rights reserved.</p>
+          <p className={"FooterCopyright"}>
+            <h1> ❮❯ by <a href={"https://github.com/lucas694"} target="_blank" className={"FooterName"}>
+              Lucas Cardoso</a> © 2022 All rights reserved.</h1></p>
         </div>
       </div>
     </div>

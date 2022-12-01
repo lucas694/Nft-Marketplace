@@ -1,0 +1,5 @@
+.SignUpFormInputField{
+    @apply w-[100%] flex flex-col justify-center items-center mt-2 p-3 rounded-full pl-5
+    caret-[#A259FF] focus:outline-none focus:ring-2 focus:ring-[#A259FF]
+    md:w-[20em] ;
+}

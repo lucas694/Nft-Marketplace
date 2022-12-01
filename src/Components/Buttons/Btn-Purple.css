@@ -1,5 +1,6 @@
 .BtnHeader{
-    @apply text-white font-semibold text-base bg-[#A259FF] px-10 py-4 rounded-[20px] flex items-center ;
+    @apply text-white font-semibold text-base bg-[#A259FF] px-20 py-3 rounded-[20px] flex items-center
+    md:px-10 md:py-4
 }
 .BtnHero{
     @apply text-white font-semibold text-base bg-[#A259FF] px-10 py-4 rounded-[20px]
@@ -45,3 +46,4 @@
 .BtnSubscribePurpleIcon{
     @apply text-white mr-2 ;
 }
+

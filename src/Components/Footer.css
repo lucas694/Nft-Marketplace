@@ -1,5 +1,5 @@
 .FooterContainer{
-    @apply w-[90%] flex flex-col justify-center pb-4 
+    @apply w-[90%] flex flex-col justify-center pb-4
     md:px-10 md:pt-10 md:w-[80%] md:mt-14
 }
 .FooterContent{
@@ -31,4 +31,7 @@
 }
 .FooterCopyright{
     @apply text-[#858584] font-semibold text-sm mt-3 text-center
+}
+.FooterName{
+    @apply text-gray-500 text-sm font-semibold border-b-[1px] border-[#ff9800]
 }

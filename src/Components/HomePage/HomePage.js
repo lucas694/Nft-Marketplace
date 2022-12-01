@@ -6,6 +6,7 @@ import BrowseCategories from "./BrowseCategories/BrowseCategories";
 import NftHighlight from "./NftHighlight";
 import SubscribeSec from "./SubscribeSec";
 import HowItsWorks from "./HowItsWorks";
+import Footer from "../Footer";
 
 const HomePage = () => {
   return(
@@ -17,6 +18,7 @@ const HomePage = () => {
       <NftHighlight/>
       <SubscribeSec/>
       <HowItsWorks/>
+      <Footer/>
 
     </div>
   )

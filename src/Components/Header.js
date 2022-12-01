@@ -62,7 +62,9 @@ const Header = () =>{
           <ul className={isOpen ? "NavMobile" : "NavMobileHidden"}>
             <li className={"LiMobileHeader"}>Marketplace</li>
             <li className={"LiMobileHeader"}>Rankings</li>
-            <li className={"LiMobileHeader"}>Connect a wallet</li>
+            <li className={"LiHeader"}>
+              <button onClick={openModalWallet}>Connect Wallet</button>
+            </li>
             <li className={"LiMobileHeader"}>
               <BtnPurple className={"BtnHeader"}
                          onClick={openModal}

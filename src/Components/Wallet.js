@@ -13,8 +13,8 @@ const Wallet = () => {
         <img src={WalletBg} alt="WalletBg" className={"WalletBg"}/>
       </div>
       <div className={"ContentWalletRight"}>
-        <h1 className={"WalletTitle"}>Wallet</h1>
-        <p></p>
+        <h1 className={"WalletTitle"}>Connect Wallet</h1>
+        <p className={"WalletDescription"}>Choose a wallet you want to connect. there are several wallet providers.</p>
         <div className={"WalletBtnSec"}>
           <BtnPurple className={"BtnWallet "}
                       BtnText={"Metamask"}

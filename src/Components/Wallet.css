@@ -16,3 +16,11 @@
 .WalletBtnSec{
     @apply w-full flex flex-col
 }
+.WalletTitle{
+   @apply text-center text-4xl font-bold text-white
+    md:text-start
+
+}
+.WalletDescription{
+    @apply text-center text-gray-300 font-semibold text-base mt-4 w-[80%]
+}

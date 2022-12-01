@@ -50,8 +50,8 @@
     {/*Botoes Wallet*/}
 .BtnWallet{
     @apply flex items-center justify-center text-white font-bold text-base border-2 border-[#A259FF] rounded-[20px]
-    w-full py-3 mt-4
-    md:w-[18em] md:py-4
+    w-full py-2 mt-4
+    md:py-4
 }
 .WalletBtnIcon{
     @apply text-white mr-2 h-10 w-10;

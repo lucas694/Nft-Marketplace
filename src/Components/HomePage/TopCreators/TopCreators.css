@@ -19,5 +19,5 @@
 }
 
 .TopCreatorsCardsSec{
-    @apply flex flex-row justify-around w-[90%] mt-4 flex-wrap pb-4
+    @apply flex flex-row justify-start w-[90%] mt-4 flex-wrap pb-4
 }

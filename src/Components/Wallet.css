@@ -1,0 +1,18 @@
+.WalletContainer{
+    @apply w-full flex flex-col justify-center items-center overflow-hidden mt-1 bg-[#2B2B2B] rounded-3xl
+    md:flex-row md:items-center md:w-[90%] md:mt-10 md:rounded-l-full
+}
+.ContentWalletLeft{
+    @apply w-full flex flex-row justify-center items-center
+}
+.WalletBg{
+    @apply w-full h-full object-cover
+    md:w-[100%] md:h-[30em] md:rounded-full
+}
+.ContentWalletRight{
+    @apply w-[80%] flex flex-col justify-center items-center mt-2 pb-4
+    md:w-[50%] md:mt-0 md:px-10 ;
+}
+.WalletBtnSec{
+    @apply w-full flex flex-col
+}

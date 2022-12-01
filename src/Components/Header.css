@@ -42,11 +42,12 @@
     @apply flex flex-col items-center justify-center absolute
     top-0 left-0 w-full h-full backdrop-blur-sm bg-[#2B2B2B] bg-opacity-50
 }
+
 .ModalHidden{
     @apply hidden
 }
 .BtnModalLight{
-    @apply text-black font-semibold text-base bg-white w-full py-4 rounded-[20px] mt-10
+    @apply text-black font-semibold text-base bg-white w-full py-4 rounded-[20px] mt-1
     flex items-center justify-center
-    lg:w-[15em];
+    lg:w-[15em] md:mt-10;
 }

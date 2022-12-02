@@ -12,6 +12,6 @@
 
 }
 .TrendingCardContent{
-    @apply flex flex-row justify-start flex-wrap
+    @apply flex flex-row justify-around flex-wrap
 
 }

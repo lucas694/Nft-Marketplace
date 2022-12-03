@@ -1,0 +1,8 @@
+.ModalStyle{
+    @apply flex flex-col items-center justify-center absolute py-6
+    top-0 left-0 w-full h-full backdrop-blur-sm bg-[#2B2B2B] bg-opacity-50
+}
+
+.ModalHidden{
+    @apply hidden
+}

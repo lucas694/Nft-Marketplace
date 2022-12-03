@@ -8,30 +8,33 @@ import Modal from 'react-modal';
 import BtnPurple from "./Buttons/Btn-Purple";
 import SignUp from "./SignUp/SignUp";
 import Wallet from "./Wallet";
+import ModalContent from "./ModalContent";
 
-const Header = () =>{
+const Header = (props) =>{
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
     setIsOpen(!isOpen)
     console.log(isOpen);
   };{/*Botão Mobile*/}
 
-  const [modalIsOpenSignUp ,setModalIsOpen] = useState(false);
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
-  const closeModal =() => {
-    setModalIsOpen(false);
-  };
 
+  const [modalSignUpIsOpen ,setModalSignUpIsOpen] = useState(false);
+  const openSignUpModal = () => {
+    setModalSignUpIsOpen(true);
+  };
+  const closeSignUpModal =() => {
+    setModalSignUpIsOpen(false);
+  };
   const [modalWalletIsOpen ,setModalWalletIsOpen] = useState(false);
-  const openModalWallet = () => {
+  const openWalletModal = () => {
     setModalWalletIsOpen(true);
   };
-  const closeModalWallet =() => {
+  const closeWalletModal =() => {
     setModalWalletIsOpen(false);
   };
+
   return(
+
     <div className={"HeaderContainer"}>
       <div className={"HeaderLeft"}>
           <FaStore className={"HeaderIcon"}/>
@@ -49,13 +52,14 @@ const Header = () =>{
 
           <li className={"LiHeader"}>Rankings</li>
           <li className={"LiHeader"}>
-            <button onClick={openModalWallet}>Connect Wallet</button>
+            <button onClick={openWalletModal}>Connect Wallet</button>
           </li>
           <li className={"LiHeader"}>
             <BtnPurple className={"BtnHeader"}
-                       onClick={openModal}
+                       onClick={openSignUpModal}
                        BtnText={"Sign Up"}
-                       BtnIcon={<FaRegUser className={"BtnHeaderIcon"}/>}/>
+                       BtnIcon={<FaRegUser className={"BtnHeaderIcon"}
+                       Content={""}/>}/>
           </li>
         </ul>
         <div>
@@ -63,39 +67,31 @@ const Header = () =>{
             <li className={"LiMobileHeader"}>Marketplace</li>
             <li className={"LiMobileHeader"}>Rankings</li>
             <li className={"LiHeader"}>
-              <button onClick={openModalWallet}>Connect Wallet</button>
+              <button onClick={openWalletModal}>Connect Wallet</button>
             </li>
             <li className={"LiMobileHeader"}>
               <BtnPurple className={"BtnHeader"}
-                         onClick={openModal}
+                         onClick={openSignUpModal}
                          BtnText={"Sign Up"}
-                         BtnIcon={<FaRegUser className={"BtnHeaderIcon"}/>}/>
+                         BtnIcon={<FaRegUser className={"BtnHeaderIcon"}
+                         Content/>}/>
             </li>
           </ul>
         </div>
       </div>
-      <div className={modalIsOpenSignUp ? "ModalStyle" : "ModalHidden" }>
-        <Modal
-          isOpen={modalIsOpenSignUp}
-          onRequestClose={closeModal}
-          className={"ModalStyle"}
-          contentLabel="Example Modal"
-        >
-          <button className={"BtnModalLight"}onClick={closeModal}>Close Modal</button>
-            <SignUp/>
-        </Modal>
-      </div>
-
-      <div className={modalWalletIsOpen ? "ModalStyle" : "ModalHidden" }>
-        <Modal
+      <div className={"ModalHidden"}>
+        <ModalContent
+                isOpen={modalSignUpIsOpen}
+                onRequestClose={closeSignUpModal}
+                className={"ModalStyle"}
+                closeModal={closeSignUpModal}
+                Content={<SignUp/>}/>
+        <ModalContent
           isOpen={modalWalletIsOpen}
-          onRequestClose={closeModalWallet}
+          onRequestClose={closeWalletModal}
           className={"ModalStyle"}
-          contentLabel="Example Modal"
-        >
-            <button className={"BtnModalLight"}onClick={closeModalWallet}>Close Modal</button>
-            <Wallet/>
-        </Modal>
+          closeModal={closeWalletModal}
+          Content={<Wallet/>}/>
       </div>
     </div>
   )
